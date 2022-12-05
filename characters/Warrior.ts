@@ -1,21 +1,7 @@
-class Warrior {
-  private _health: number = 200;
-  private _power: number = 50;
+import { Character } from './Character';
+class Warrior extends Character {
   constructor(health: number, power: number) {
-    this._health = health;
-    this._power = power;
-  }
-  get hp(): number {
-    return this._health;
-  }
-  set hp(hp: number) {
-    this._health = hp;
-  }
-  get power(): number {
-    return this._power;
-  }
-  set power(power: number) {
-    this._power = power;
+    super(health, power);
   }
   attack() {
     console.log('Code for atack here');
@@ -28,3 +14,5 @@ class Warrior {
 }
 
 const warrior = new Warrior(200, 50);
+console.log(warrior);
+export { Warrior };

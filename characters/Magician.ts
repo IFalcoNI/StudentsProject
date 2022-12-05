@@ -1,22 +1,9 @@
-class Magician {
-  private _health: number;
-  private _power: number;
+import { Character } from './Character';
+class Magician extends Character {
   constructor(health: number, power: number) {
-    this._health = health;
-    this._power = power;
+    super(health, power);
   }
-  get hp(): number {
-    return this._health;
-  }
-  set hp(hp: number) {
-    this._health = hp;
-  }
-  get power(): number {
-    return this._power;
-  }
-  set power(power: number) {
-    this._power = power;
-  }
+
   attack() {
     console.log('Code for atack here');
     console.log('Atacking with fireball');
@@ -28,3 +15,6 @@ class Magician {
 }
 
 const magician = new Magician(80, 100);
+console.log(magician);
+
+export { Magician };
