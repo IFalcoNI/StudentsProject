@@ -29,7 +29,7 @@ class CharacterAction {
   attack() {
     this.character.attack();
   }
-  
+
   defense() {
     this.character.defense();
   }
