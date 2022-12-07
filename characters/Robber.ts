@@ -13,7 +13,5 @@ class Robber extends Character {
   }
 }
 
-const robber = new Robber(100, 25);
-console.log(robber);
 
 export { Robber };

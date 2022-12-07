@@ -13,6 +13,4 @@ class Warrior extends Character {
   }
 }
 
-const warrior = new Warrior(200, 50);
-console.log(warrior);
 export { Warrior };

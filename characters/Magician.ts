@@ -14,7 +14,5 @@ class Magician extends Character {
   }
 }
 
-const magician = new Magician(80, 100);
-console.log(magician);
 
 export { Magician };

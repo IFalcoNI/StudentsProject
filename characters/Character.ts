@@ -1,23 +1,23 @@
 abstract class Character {
-  private _health: number;
-  private _power: number;
+  private health: number;
+  private power: number;
 
   constructor(health: number, power: number) {
-    this._health = health;
-    this._power = power;
+    this.health = health;
+    this.power = power;
   }
 
-  get hp(): number {
-    return this._health;
+  get getHp(): number {
+    return this.health;
   }
-  set hp(hp: number) {
-    this._health = hp;
+  set setHp(hp: number) {
+    this.health = hp;
   }
-  get power(): number {
-    return this._power;
+  get getPower(): number {
+    return this.power;
   }
-  set power(power: number) {
-    this._power = power;
+  set setPower(power: number) {
+    this.power = power;
   }
 
   abstract attack(): void;
