@@ -21,6 +21,6 @@ abstract class Character {
   }
 
   abstract attack(): void;
-  abstract defend(): void;
+  abstract defense(): void;
 }
 export { Character };

@@ -4,11 +4,10 @@ import { Robber } from './characters/Robber';
 import { Warrior } from './characters/Warrior';
 
 enum CharacterOptions {
-  magician='Magician',
-  robber='Magician',
-  warrior='Magician'
+  magician = 'Magician',
+  robber = 'Magician',
+  warrior = 'Magician'
 }
-
 class Provider {
   static createCharacter(characterType: string): Character {
     if (characterType === 'Magician') {
@@ -22,6 +21,18 @@ class Provider {
     }
   }
 }
+class CharacterAction {
+  character: Character;
+  constructor(characterType: string) {
+    this.character = Provider.createCharacter(characterType);
+  }
+  attack() {
+    this.character.attack();
+  }
+  defense() {
+    this.character.defense();
+  }
+}
 
-const character = Provider.createCharacter(CharacterOptions.magician);
-console.log(character);
+const magician = new CharacterAction(CharacterOptions.magician);
+magician.attack();
