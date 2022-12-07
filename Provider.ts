@@ -5,8 +5,8 @@ import { Warrior } from './characters/Warrior';
 
 enum CharacterOptions {
   magician = 'Magician',
-  robber = 'Magician',
-  warrior = 'Magician'
+  robber = 'Robber',
+  warrior = 'Warrior'
 }
 class Provider {
   static createCharacter(characterType: string): Character {
