@@ -1,7 +1,7 @@
-import { Character } from './characters/Character';
-import { Magician } from './characters/Magician';
-import { Robber } from './characters/Robber';
-import { Warrior } from './characters/Warrior';
+import { Character } from '../characters/Character';
+import { Magician } from '../characters/Magician';
+import { Robber } from '../characters/Robber';
+import { Warrior } from '../characters/Warrior';
 
 enum CharacterOptions {
   magician = 'Magician',
