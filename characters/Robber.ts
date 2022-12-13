@@ -7,7 +7,7 @@ class Robber extends Character {
     console.log('Code for atack here');
     console.log('Atacking with bow');
   }
-  defend() {
+  defense() {
     console.log('Code for defending here');
     console.log('Running away');
   }
