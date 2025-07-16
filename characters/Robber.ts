@@ -13,5 +13,4 @@ class Robber extends Character {
   }
 }
 
-
 export { Robber };
