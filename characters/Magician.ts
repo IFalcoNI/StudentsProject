@@ -8,7 +8,7 @@ class Magician extends Character {
     console.log('Code for atack here');
     console.log('Atacking with fireball');
   }
-  defend() {
+  defense() {
     console.log('Code for defending here');
     console.log('Magic staff');
   }

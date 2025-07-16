@@ -7,7 +7,7 @@ class Warrior extends Character {
     console.log('Code for atack here');
     console.log('Atacking with sword');
   }
-  defend() {
+  defense() {
     console.log('Code for defending here');
     console.log('Raised the shield');
   }
